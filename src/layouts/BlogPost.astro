@@ -8,8 +8,6 @@ import FormattedDate from '../components/FormattedDate.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
-
-export const prerender = true;
 ---
 
 <html lang="en">
