@@ -8,6 +8,6 @@ import netlify from "@astrojs/netlify";
 export default defineConfig({
   site: 'https://ctysse.net',
   integrations: [mdx(), sitemap()],
-  output: "server",
+  output: "static",
   adapter: netlify()
 });
