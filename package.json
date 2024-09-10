@@ -1,12 +1,17 @@
 {
-  "name": "superior-satellite",
+  "name": "ctysse-net-blog",
   "type": "module",
   "version": "0.0.1",
+  "author": "Charlie Tysse <tyssejc@gmail.com>",
+  "repository": "git@github.com:tyssejc/astro-blog.git",
+  "license": "MIT",
+  "private": true,
+  "main": "dist/index.js",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "wrangler pages dev ./dist",
     "astro": "astro"
   },
   "dependencies": {
@@ -15,5 +20,9 @@
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.3",
     "astro": "^4.6.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2",
+    "wrangler": "^3.75.0"
   }
 }
